@@ -1,12 +1,24 @@
 .job-listing {
     width: 80vw;
-    border: 1px solid black;
     display: flex;
     align-items: center;
-    
     padding: 20px;
     background-color: white;
     border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 10px 0 hsla(180, 29%, 50%, 0.2);
+}
+
+.job-listing.featured::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: hsl(180, 29%, 50%);
+
 }
 
 .logo {
@@ -45,7 +57,6 @@
     color: white;
 }
 
-
 .company-name {
     font-size: 18px;
     font-weight: 700;
@@ -54,6 +65,11 @@
 
 .position-title {
     font-size: 1.5rem;
+}
+
+.position-title:hover {
+    cursor: pointer;
+    color: hsl(180, 29%, 50%);
 }
 
 .listing-stats {
@@ -77,5 +93,5 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: end;
-    gap: 10px;
+    gap: 20px;
 }

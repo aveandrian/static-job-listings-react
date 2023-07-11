@@ -1,4 +1,6 @@
+import { nanoid } from 'nanoid'
 import '../styles/JobListing.css'
+import PositionTag from './PositionTag'
 
 export default function JobListing(props){
     return (
@@ -20,10 +22,14 @@ export default function JobListing(props){
                 </div>
             </div>
             <div className='position-tags'>
-                <p className='position-role'>{props.role}</p>
-                <p className='position-level'>{props.level}</p>
-                <p className='position-languages'>{props.languages[0]}</p>
-                <p className='position-tools'>{props.tools[0]}</p>
+                <PositionTag addTagToFilter={props.addTagToFilter} id={nanoid()} type="role" name={props.role} />
+                <PositionTag addTagToFilter={props.addTagToFilter}  id={nanoid()} type="level" name={props.level} />
+                {props.languages.length > 0 && props.languages.map((language, i) => 
+                    <PositionTag key={i} addTagToFilter={props.addTagToFilter} id={nanoid()}  type="languages" name={language} />
+                )}
+                {props.tools.length > 0 && props.tools.map((tool, i) => 
+                    <PositionTag key={i} addTagToFilter={props.addTagToFilter} id={nanoid()}  type="tools" name={tool} />
+                )}
             </div>
         </div>
     )

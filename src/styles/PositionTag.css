@@ -1,0 +1,13 @@
+.position-tag {
+    padding: 10px;
+    background-color: hsl(180, 31%, 95%);
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+    border-radius: 5px;
+}
+
+.position-tag:hover {
+    cursor: pointer;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}

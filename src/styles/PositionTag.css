@@ -1,9 +1,9 @@
 .position-tag {
-    padding: 10px;
+    padding: 0.625rem;
     background-color: hsl(180, 31%, 95%);
     font-weight: 700;
     color: hsl(180, 29%, 50%);
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 .position-tag:hover {

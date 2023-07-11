@@ -12,7 +12,7 @@ body {
 
 
 p {
-  font-size: 15px;
+  font-size: 0.938rem;
 }
 
 main {
@@ -25,7 +25,7 @@ main {
 }
 
 .header-bg {
-  height: 156px;
+  height: 9.75rem;
   width: 100vw;
   background: url('./images/bg-header-desktop.svg'), hsl(180, 29%, 50%);
   background-repeat: no-repeat;
@@ -35,25 +35,24 @@ main {
 .filters-section {
   width: 80vw;
   height: fit-content;
-  min-height: 70px;
+  min-height: 4.375rem;
   position: absolute;
-  top:156px;
+  top: 9.75rem;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
-  padding: 20px 50px;
-  border-radius: 5px;
+  padding: 1.25rem 3.125rem;
+  border-radius: 0.313rem;
   background-color: white;
-  gap: 20px;
-  box-shadow: 0 10px 10px 0 hsla(180, 29%, 50%, 0.2);
+  gap: 1.25rem;
+  box-shadow: 0 0.625rem 0.625rem 0 hsla(180, 29%, 50%, 0.2);
 }
 
 .filter-tags-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .clear-btn {
@@ -78,14 +77,14 @@ main {
 }
 
 .attribution, .attribution a {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   color: hsl(180, 29%, 50%);
   text-align: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 47rem) {
   .header-bg {
-    height: 156px;
+    height: 9.75rem;
     width: 100vw;
     background: url('./images/bg-header-mobile.svg'), hsl(180, 29%, 50%);
     background-repeat: no-repeat;
@@ -96,7 +95,7 @@ main {
     position: relative;
     left: 0;
     top: 0;
-    transform: translateY(-25px);
+    transform: translateY(-1.563rem);
     padding-left: 2vw;
     padding-right: 5vw;
   }

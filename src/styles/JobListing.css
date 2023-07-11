@@ -1,0 +1,81 @@
+.job-listing {
+    width: 80vw;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.description {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listing-tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.listing-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+.new-tag {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
+
+.featured-tag {
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+}
+
+
+.company-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+}
+
+.position-title {
+    font-size: 1.5rem;
+}
+
+.listing-stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(180, 8%, 52%);
+}
+
+.stats-divider {
+    padding: 1px;
+    border-radius: 50%;
+    border: 1px solid hsl(180, 8%, 52%);
+    background: hsl(180, 8%, 52%)
+}
+
+.position-tags {
+    margin-left: auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}

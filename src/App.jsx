@@ -56,7 +56,10 @@ function App() {
       <div className='header-bg'></div>
       {filters.length > 0 && (
         <div className='filters-section'>
-          {filters.map(filter => <FilterTag key={filter.id} {...filter} removeTagFromFilter={removeTagFromFilter}/>)}
+          <div className='filter-tags-container'>
+            {filters.map(filter => <FilterTag key={filter.id} {...filter} removeTagFromFilter={removeTagFromFilter}/>)}
+
+          </div>
           <p className='clear-btn' onClick={clearFilters}>Clear</p>
         </div>
       )}

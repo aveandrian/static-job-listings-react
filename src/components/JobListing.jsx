@@ -9,8 +9,8 @@ export default function JobListing(props){
             <div className='description'>
                 <div className='listing-tags'>
                     <p className='company-name'>{props.company}</p>
-                    {props.new && <p className='new-tag listing-tag'>NEW!</p>}
-                    {props.featured && <p className='featured-tag listing-tag'>FEATURED</p>}
+                    {props.new && <div className='new-tag listing-tag'>NEW!</div>}
+                    {props.featured && <div className='featured-tag listing-tag'>FEATURED</div>}
                 </div> 
                 <h1 className='position-title'>{props.position}</h1>
                 <div className='listing-stats'>
@@ -21,6 +21,7 @@ export default function JobListing(props){
                     <p className='location'>{props.location}</p>
                 </div>
             </div>
+            <div className='listing-divider'></div>
             <div className='position-tags'>
                 <PositionTag addTagToFilter={props.addTagToFilter} id={nanoid()} type="role" name={props.role} />
                 <PositionTag addTagToFilter={props.addTagToFilter}  id={nanoid()} type="level" name={props.level} />
